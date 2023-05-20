@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Zone</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="./images/clock.png" type="image/x-icon">
+  <!-- google font link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <!-- font awsome link  -->
+  <script src="https://kit.fontawesome.com/6da7043c56.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- nav section start -->
+
+  <nav>
+    <div class="left-nav">
+      <img src="./images/logo.png.webp" alt="logo" />
+    </div>
+    <div class="middle-nav">
+      <ul>
+        <li class="nav"><a href="#">Home</a></li>
+        <li class="nav"><a href="#">Shop</a></li>
+        <li class="nav"><a href="#">About</a></li>
+        <li class="dropdown nav">
+          <a href="#">Latest</a>
+          <ul class="submanu">
+            <li><a href="#">Product List</a></li>
+            <li><a href="#">Product Details</a></li>
+          </ul>
+        </li>
+        <li class="nav dropdown">
+          <a href="#">Blog</a>
+          <ul class="submanu">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Blog Details</a></li>
+          </ul>
+        </li>
+        <li class="nav dropdown">
+          <a href="#">Pages</a>
+          <ul class="submanu">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Element</a></li>
+            <li><a href="#">Confirmation</a></li>
+            <li><a href="#">Product Checkout</a></li>
+          </ul>
+        </li>
+        <li class="nav"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="right-nav">
+      <i class="fa-solid fa-magnifying-glass" title="Search"></i>
+      <i class="fa-solid fa-user" title="Profile"></i>
+      <i class="fa-sharp fa-solid fa-cart-shopping" id="cart" title="Cart"></i>
+      <i class="fa-solid fa-bars" id="menu"></i>
+    </div>
+    <div class="navblock">
+      <ul>
+        <li class="nav"><a href="#">Home</a></li>
+        <li class="nav"><a href="#">Shop</a></li>
+        <li class="nav"><a href="#">About</a></li>
+        <li class="nav"><a href="#">Latest</a></li>
+        <li class="nav"><a href="#">Blog</a></li>
+        <li class="nav"><a href="#">Pages</a></li>
+        <li class="nav"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="cart-menu">
+      <h1 style="text-align: center; padding: 20px 0; color: crimson;">Cart</h1>
+      <ul>
+        
+      </ul>
+      <div class="total-price">
+        <span>Total Price : $<small> 0</small></span>
+        <button class="placeorder">Place Order</button>
+
+      </div>
+    </div>
+
+  </nav>
+  <!-- nav section end -->
+  <!-- banner section start -->
+  <div class="banner">
+    <div class="banner-left-col">
+      <div class="title">
+        <h1>Select Your New Perfect Style</h1>
+      </div>
+      <div class="decription">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+          vero. Lorem, ipsum dolor sit amet .
+        </p>
+      </div>
+      <div class="btn">
+        <button class="shopnowbtn">Shop NOw</button>
+      </div>
+    </div>
+    <div class="banner-right-col">
+      <img src="./images/watch.png.webp" class="watch" />
+    </div>
+  </div>
+  <!-- banner section end -->
+  <!-- populer product setcton start  -->
+  <section id="newarival">
+    <div class="product-title">
+      <h2>New Arrivals</h2>
+    </div>
+    <div class="new-arivels-row">
+      <div id="ar1" class="arivels-1 ">
+        <div class="arivel-img">
+          <img src="./images/new_product1.png.webp" />
+        </div>
+        <div class="arivel-title">
+          <h3>Louis Vuitton</h3>
+          <span>$ 5,743</span>
+        </div>
+      </div>
+      <div id="ar2" class="arivels-2">
+        <div class="arivel-img">
+          <img src="./images/new_product2.png.webp" />
+        </div>
+        <div class="arivel-title">
+          <h3>Vacheron Constantin</h3>
+          <span>$ 45,743</span>
+        </div>
+      </div>
+      <div id="ar3" class="arivels-3">
+        <div class="arivel-img">
+          <img src="./images/new_product3.png.webp" alt="" />
+        </div>
+        <div class="arivel-title">
+          <h3>Girard-Perregaux</h3>
+          <span>$ 25,743</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- populer product setcton end  -->
+
+  <!-- archives section start  -->
+
+  <section id="archive">
+    <div class="archive-row">
+      <div class="archive-col-1"></div>
+      <div class="archive-col-2"></div>
+      <div class="archive-col-3">
+        <div class="inner-archive1"></div>
+        <div class="inner-archive2"></div>
+      </div>
+    </div>
+  </section>
+  <!-- archives section end  -->
+
+  <section id="populer-product">
+    <div class="populer-producut-title">
+      <h1>Popular Items</h1>
+      <p>
+        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna
+      </p>
+      <p>aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+    </div>
+    <div class="product-row">
+      <div class="product-main-col">
+        <div class="product-img">
+          <img src="./images/popular1.png.webp" />
+          <div class="hover">
+            <button class="addtocartbtn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-description">
+          <h3>Henley GB05370/78</h3>
+          <span>$ 20743</span>
+        </div>
+      </div>
+      <div class="product-main-col">
+        <div class="product-img">
+          <img src="./images/popular2.png.webp" />
+          <div class="hover">
+            <button class="addtocartbtn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-description">
+          <h3>Rolex (man)</h3>
+          <span>$ 10743</span>
+        </div>
+      </div>
+      <div class="product-main-col">
+        <div class="product-img">
+          <img src="./images/popular3.png.webp" />
+          <div class="hover">
+            <button class="addtocartbtn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-description">
+          <h3>Rado</h3>
+          <span>$ 3743</span>
+        </div>
+      </div>
+    </div>
+    <div class="product-row">
+      <div class="product-main-col">
+        <div class="product-img">
+          <img src="./images/popular4.png.webp" />
+          <div class="hover">
+            <button class="addtocartbtn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-description">
+          <h3>Patek Philippe</h3>
+          <span>$ 5743</span>
+        </div>
+      </div>
+      <div class="product-main-col">
+        <div class="product-img">
+          <img src="./images/popular5.png.webp" />
+          <div class="hover">
+            <button class="addtocartbtn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-description">
+          <h3>Omega</h3>
+          <span>$ 453</span>
+        </div>
+      </div>
+      <div class="product-main-col">
+        <div class="product-img">
+          <img src="./images/popular6.png.webp" />
+          <div class="hover">
+            <button class="addtocartbtn">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-description">
+          <h3>Hublot</h3>
+          <span>$ 743</span>
+        </div>
+      </div>
+    </div>
+    <button class="viewmoreproduct">View More Products</button>
+  </section>
+  <!-- populer product section end  -->
+  <section id="choice-of-watch">
+    <div class="choice-row">
+      <div class="choice-artical-col">
+        <div class="choice-artical-title">
+          <h1>Watch of Choice</h1>
+        </div>
+        <div class="choice-artical-des">
+          <p>
+            Enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse.
+          </p>
+        </div>
+        <div class="choice-btn">
+          <button>Show Watch</button>
+        </div>
+      </div>
+      <div class="choice-img-col">
+        <img src="./images/choce_watch1.png.webp" />
+      </div>
+    </div>
+
+    <div class="choice-row choice-row-mobile">
+      <div class="choice-artical-col">
+        <div class="choice-artical-title">
+          <h1>Watch of Choice</h1>
+        </div>
+        <div class="choice-artical-des">
+          <p>
+            Enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse.
+          </p>
+        </div>
+        <div class="choice-btn">
+          <button>Show Watch</button>
+        </div>
+      </div>
+      <div class="choice-img-col">
+        <img src="./images/choce_watch2.png.webp" />
+      </div>
+    </div>
+
+    <div class="choice-row choice-row-pc">
+      <div class="choice-img-col">
+        <img src="./images/choce_watch2.png.webp" />
+      </div>
+      <div class="choice-artical-col">
+        <div class="choice-artical-title">
+          <h1>Watch of Choice</h1>
+        </div>
+        <div class="choice-artical-des">
+          <p>
+            Enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse.
+          </p>
+        </div>
+        <div class="choice-btn">
+          <button>Show Watch</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- delivery section start  -->
+
+  <section id="delivery">
+    <div class="delivery-row">
+      <div class="delivery-col">
+        <i class="fa-brands fa-square-font-awesome-stroke"></i>
+        <h3>Free Shipping Method</h3>
+        <p>aorem ixpsacdolor sit ameasecur</p>
+        <p>adipisicing elitsf edasd.</p>
+      </div>
+      <div class="delivery-col">
+        <i class="fa-solid fa-unlock-keyhole"></i>
+        <h3>Secure Payment System</h3>
+        <p>aorem ixpsacdolor sit ameasecur</p>
+        <p>adipisicing elitsf edasd.</p>
+      </div>
+      <div class="delivery-col">
+        <i class="fa-solid fa-arrows-rotate"></i>
+        <h3>First Delivery Service</h3>
+        <p>aorem ixpsacdolor sit ameasecur</p>
+        <p>adipisicing elitsf edasd.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- delivery section end  -->
+
+  <section id="quick-link">
+    <div class="quick-link-row">
+      <div class="quick-link-col">
+        <img src="./images/logo.png.webp" />
+        <p>Office 1 : House 13/B Carlifornia ,Usa</p>
+        <p>Office 2 : Dhanmondi 32/a ,Dhaka 1215</p>
+      </div>
+
+      <div class="quick-link-col">
+        <h3>Quick Links</h3>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Offers & Discounts</a></p>
+        <p><a href="#">Get Coupon</a></p>
+        <p><a href="#">Contact Us</a></p>
+      </div>
+      <div class="quick-link-col">
+        <h3>New Products</h3>
+        <p><a href="#">Woman Cloth</a></p>
+        <p><a href="#">Fashion Accessories</a></p>
+        <p><a href="#">Man Accessories</a></p>
+        <p><a href="#">Rubber made Toys</a></p>
+      </div>
+      <div class="quick-link-col">
+        <h3>Support</h3>
+        <p><a href="#">Frequently Asked Questions</a></p>
+        <p><a href="#">Terms & Conditions</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Report a Payment Issue</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- footer section start  -->
+ <div class="up-arrow">
+
+ </div>
+ <div class="uparrow">
+  <a href="#"><img src="./images/up-arrow.png" alt="uparrow" class="up-arrow-img"></a>
+ </div>
+  <footer>
+    <div class="footer-row">
+      <div class="footer-left-col">
+        <p>Copyright &copy;2023 All rights reserved | made by <a href="#">Tanjil Hossain</a></p>
+      </div>
+      <div class="footer-right-col">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer section end  -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
