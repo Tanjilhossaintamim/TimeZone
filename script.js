@@ -13,8 +13,17 @@ menubar.onclick = () => {
     menubar.classList.toggle('fa-xmark')
     hidenav.classList.toggle('navshow')
 }
+let btncolor = true;
 cartbtn.onclick = () => {
     cartmenu.classList.toggle('show-cart-menu');
+    if (btncolor) {
+        cartbtn.style.color = '#f7463d';
+        btncolor = false;
+    }
+    else {
+        cartbtn.style.color = '#000';
+        btncolor = true;
+    }
 
 }
 
@@ -83,12 +92,12 @@ function add_to_cart(src, text, price) {
 
 document.addEventListener('scroll', navsticky);
 document.addEventListener('scroll', bannershow);
-document.addEventListener('scroll', function(){
-    if (window.scrollY>1000){
-        uparrow.style.display='block';
+document.addEventListener('scroll', function () {
+    if (window.scrollY > 1000) {
+        uparrow.style.display = 'block';
     }
-    else{
-        uparrow.style.display='none';
+    else {
+        uparrow.style.display = 'none';
     }
 })
 
