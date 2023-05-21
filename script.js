@@ -9,6 +9,46 @@ let total_price = total_price_parent.querySelector('span small');
 const uparrow = document.querySelector('.up-arrow-img');
 
 
+//animation section 
+const newarival = document.querySelectorAll('section');
+
+const product_title = document.querySelector('.product-title');
+const arivel1 = document.querySelector('#ar1');
+const arivel2 = document.querySelector('#ar2');
+const arivel3 = document.querySelector('#ar3');
+
+window.addEventListener('scroll', (e) => {
+    let position = window.scrollY
+
+    newarival.forEach(function (item) {
+        if (position > 600 && position < 1700) {
+            arivel1.classList.add('first-arivel');
+            arivel2.classList.add('second-arivel');
+            arivel3.classList.add('third-arivel');
+            product_title.classList.add('product-title-show');
+        }
+        else if (position > 0 && position < 2300) {
+            arivel1.classList.add('first-arivel');
+            arivel2.classList.add('second-arivel');
+            arivel3.classList.add('third-arivel');
+            product_title.classList.add('product-title-show');
+        }
+
+        else {
+            arivel1.classList.remove('first-arivel');
+            arivel2.classList.remove('second-arivel');
+            arivel3.classList.remove('third-arivel');
+            product_title.classList.remove('product-title-show');
+        }
+
+
+    })
+})
+// animation section end
+
+
+
+
 menubar.onclick = () => {
     menubar.classList.toggle('fa-xmark')
     hidenav.classList.toggle('navshow')
@@ -91,7 +131,7 @@ function add_to_cart(src, text, price) {
 }
 
 document.addEventListener('scroll', navsticky);
-document.addEventListener('scroll', bannershow);
+
 document.addEventListener('scroll', function () {
     if (window.scrollY > 1000) {
         uparrow.style.display = 'block';
@@ -112,43 +152,4 @@ function navsticky() {
         navbar.classList.remove('sticky-nav');
 
     }
-}
-function bannershow() {
-    const product_title = document.querySelector('.product-title');
-    const arivel1 = document.querySelector('#ar1');
-    const arivel2 = document.querySelector('#ar2');
-    const arivel3 = document.querySelector('#ar3');
-    if (window.scrollY < 640) {
-        arivel1.classList.remove('first-arivel');
-        arivel2.classList.remove('second-arivel');
-        arivel3.classList.remove('third-arivel');
-        product_title.classList.remove('product-title-show');
-
-
-    }
-
-    else if (window.scrollY > 1800) {
-
-        arivel1.classList.remove('first-arivel');
-        arivel2.classList.remove('second-arivel');
-        arivel3.classList.remove('third-arivel');
-        product_title.classList.remove('product-title-show');
-    }
-    else if (window.scrollY > 640 && window.screenY < 1710) {
-        arivel1.classList.add('first-arivel');
-        arivel2.classList.add('second-arivel');
-        arivel3.classList.add('third-arivel');
-        product_title.classList.add('product-title-show');
-
-
-    }
-
-    else {
-        arivel1.classList.remove('first-arivel');
-        arivel2.classList.remove('second-arivel');
-        arivel3.classList.remove('third-arivel');
-        product_title.classList.remove('product-title-show');
-
-    }
-
 }
