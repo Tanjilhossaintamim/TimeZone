@@ -607,6 +607,7 @@ footer {
   margin-left: 15px;
   font-weight: bold;
   color: red;
+
 }
 .cart-menu ul li {
   list-style: none;
@@ -614,6 +615,14 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+.cart-menu ul li span{
+  width: 40%;
+  text-align: left;
+
+}
+.cart-menu ul li small{
+  width: 20%;
 }
 .cart-menu ul li img {
   width: 50px;
